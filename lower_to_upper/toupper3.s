@@ -1,3 +1,5 @@
+# Change the size of the buffer
+
 #PURPOSE:    This program converts an input file
 #            to an output file with all letters
 #            converted to uppercase.
@@ -51,7 +53,7 @@
 #         into the output file.  This should
 #         never exceed 16,000 for various
 #         reasons.
-.equ BUFFER_SIZE, 500
+.equ BUFFER_SIZE, 10000000000000000000
 .lcomm BUFFER_DATA, BUFFER_SIZE
 
 .section .text
@@ -241,3 +243,4 @@ end_convert_loop:
 movl  %ebp, %esp
 popl  %ebp
 ret
+
