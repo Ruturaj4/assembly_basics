@@ -1,10 +1,6 @@
 #Rewrite the program so that it uses storage in the .bss section rather than the
 #stack to store the file descriptors.
 
-# How to use?
-
-# ./toupper4 toupperdummy.s toupper.uppercase
-
 #system call numbers
 .equ SYS_OPEN, 5
 .equ SYS_WRITE, 4
